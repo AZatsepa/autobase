@@ -83,14 +83,13 @@ def remove_record(car_number)
 
   def check
     result = 0
-    @history.each do |record|
-      if Time.now > record.time && record.status == :rent
-       # @must_pay += (((Time.now - record.time) / 60 / 60 / 24) + 1).to_i * 50
+      @history.each do |record|
+        if Time.now > record.time && record.status == :rent
           result += record.days * 50
-      else
-        0
+        else
+          0
+        end
       end
-    end
     result
   end
 

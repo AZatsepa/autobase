@@ -31,14 +31,7 @@ class CardRecord
   #   @return_time = nil
   # end
 
-  def check
-     # if Time.now > @time && status != :checked && status != :returned
-     #  @status = :checked
-     #  -(days * 10)
-    # else
-    #   0
-    # end
-  end
+  
 end
 
 

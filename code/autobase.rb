@@ -187,7 +187,7 @@ class AutoBase
 
    def rental(car_number, user_id)
     user_card = find_user_card(user_id)
-    car      = find_car_by(:car_number, car_number)
+    car       = find_car_by(:car_number, car_number)
     unless car_present?(car)
       puts 'Car not present!'
       return   
